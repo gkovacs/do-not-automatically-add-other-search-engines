@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Do not automatically add other search engines",
   "short_name": "nosearchengines",
-  "description": "Chrome automatically adds sites to your search engines list when you visit them. This prevents it",
+  "description": "Chrome automatically adds sites to your search engines list when you visit them, which this extension prevents",
   "version": "1.0.0",
   "permissions": [
     "http://*/",
