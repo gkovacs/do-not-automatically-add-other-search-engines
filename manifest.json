@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Do not automatically add other search engines",
+  "short_name": "nosearchengines",
+  "description": "Chrome automatically adds sites to your search engines list when you visit them. This prevents it",
+  "version": "1.0.0",
+  "permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "contentscript.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
